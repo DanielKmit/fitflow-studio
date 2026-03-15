@@ -22,7 +22,7 @@ const instructors = [
   {
     name: "Aisha Williams",
     specialty: "Yin & Meditation",
-    image: "https://images.unsplash.com/photo-1609592806596-004015d0a38d?w=600&q=80&auto=format",
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&auto=format",
     bio: "Aisha's gentle approach to yoga integrates mindfulness and breathwork into every session. Trained in both Eastern and Western modalities, she creates deeply healing experiences.",
     certifications: "RYT 200, Mindfulness Teacher",
   },
