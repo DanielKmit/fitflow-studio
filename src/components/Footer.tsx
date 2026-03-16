@@ -4,9 +4,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div className="md:col-span-2">
-            <h3 className="font-serif text-2xl text-white mb-3">
+            <a href="/" className="font-serif text-2xl text-white mb-3 block">
               FitFlow <span className="text-gold">Studio</span>
-            </h3>
+            </a>
             <p className="text-sm leading-relaxed max-w-sm">
               A sanctuary for movement, mindfulness, and community. Located in
               the heart of the city, offering classes for every body and every
@@ -45,13 +45,14 @@ export default function Footer() {
             © {new Date().getFullYear()} FitFlow Studio. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs">
-            <a href="#" className="hover:text-white transition-colors">
+            {/* Placeholder legal links */}
+            <a href="#privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="#terms" className="hover:text-white transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               Instagram
             </a>
           </div>

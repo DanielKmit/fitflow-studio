@@ -52,16 +52,22 @@ function InstructorCard({
           style={{ backgroundImage: `url('${instructor.image}')` }}
         />
 
-        {/* Default overlay - name & specialty */}
-        <div className="absolute inset-0 bg-gradient-to-t from-sage-dark/80 via-transparent to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-8">
-          <h3 className="font-serif text-2xl text-white font-medium mb-1">
-            {instructor.name}
-          </h3>
-          <p className="text-gold-light text-sm font-semibold uppercase tracking-wider">
-            {instructor.specialty}
-          </p>
-        </div>
+        {/* Default overlay - name & specialty (hidden on hover) */}
+        <motion.div
+          initial={false}
+          animate={{ opacity: hovered ? 0 : 1 }}
+          transition={{ duration: 0.3 }}
+          className="absolute inset-0 bg-gradient-to-t from-sage-dark/80 via-transparent to-transparent"
+        >
+          <div className="absolute bottom-0 left-0 right-0 p-8">
+            <h3 className="font-serif text-2xl text-white font-medium mb-1">
+              {instructor.name}
+            </h3>
+            <p className="text-gold-light text-sm font-semibold uppercase tracking-wider">
+              {instructor.specialty}
+            </p>
+          </div>
+        </motion.div>
 
         {/* Hover overlay - bio */}
         <motion.div
